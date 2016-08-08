@@ -59,7 +59,7 @@ int main (int argc, char* argv[])
         directoriesStack.pop();
 
         // Traverse all files and directories in present directory
-        for ( curr_dir_iter; curr_dir_iter != end_iter; ++curr_dir_iter )
+        for ( ; curr_dir_iter != end_iter; ++curr_dir_iter )
         {
             // If present directory contains a directory push it on the stack to be traveresed later
             if ( is_directory(curr_dir_iter->status()) ) 

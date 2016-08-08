@@ -1,3 +1,6 @@
+
+all: boost_ls recursive_boost_ls
+
 boost_ls: boost_ls.o
 	g++ boost_ls.o -lboost_system -lboost_filesystem -o boost_ls
 

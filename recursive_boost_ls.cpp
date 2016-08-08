@@ -45,7 +45,6 @@ int main (int argc, char* argv[])
     // directory_iterator object initialized for current directory
     directory_iterator dir_iter(p);
 
-
     cout << "All files in this path are " << endl;
     
     // Recursively list all the files in directory and traverse the sub-directories
@@ -66,8 +65,6 @@ void listFilesInDirectory ( directory_iterator dir_iter )
     // Reverse the vector to bring all files before directories since we want to print
     // files in current directory first and then traverse to sub-directories
     reverse( sortedList.begin(), sortedList.end() );
-
-   
 
     // Traverse through all files and directories in present directory
     for (vector<path>::const_iterator it (sortedList.begin()), it_end(sortedList.end()); it != it_end; ++it)
